@@ -1,5 +1,4 @@
 # Data Science Assignment for Web3 Trading Team
-# Data Science Assignment for Web3 Trading Team
 
 ## Project Overview
 
