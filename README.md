@@ -1,6 +1,39 @@
-Account,Coin,Execution Price,Size Tokens,Size USD,Side,Timestamp IST,Start Position Direction,Closed PnL,Order ID,Crossed,Fee,Trade ID,Timestamp,Date,timestamp,value,classification,date
-0xae5eacaf9c6b9111fd53034a602c192a04e082ed,@107,7.9769,986.87,7872.16,BUY,2024-12-02 22:50:00,0.0,Buy,52017706630,True,0.345404,895000000000000.0,1730000000000.0,2024-12-02,1733117400,80,Extreme Greed,2024-12-02
-0xae5eacaf9c6b9111fd53034a602c192a04e082ed,@107,7.98,16.0,127.68,BUY,2024-12-02 22:50:00,986.524596,Buy,52017706630,True,0.0056,443000000000000.0,1730000000000.0,2024-12-02,1733117400,80,Extreme Greed,2024-12-02
-0xae5eacaf9c6b9111fd53034a602c192a04e082ed,@107,7.9855,144.09,1150.63,BUY,2024-12-02 22:50:00,1002.518996,Buy,52017706630,True,0.050431,660000000000000.0,1730000000000.0,2024-12-02,1733117400,80,Extreme Greed,2024-12-02
-0xae5eacaf9c6b9111fd53034a602c192a04e082ed,@107,7.9874,142.98,1142.04,BUY,2024-12-02 22:50:00,1146.558564,Buy,52017706630,True,0.050043,1080000000000000.0,1730000000000.0,2024-12-02,1733117400,80,Extreme Greed,2024-12-02
-0xae5eacaf9c6b9111fd53034a602c192a04e082ed,@107,7.9894,8.73,69.75,BUY,2024-12-02 22:50:00,1289.488521,Buy,52017706630,True,0.003055,1050000000000000.0,1730000000000.0,2024-12-02,1733117400,80,Extreme Greed,2024-12-02
+# Data Science Assignment for Web3 Trading Team
+# Data Science Assignment for Web3 Trading Team
+
+## Project Overview
+
+This project is a data science assignment to explore and analyze the relationship between trader behavior and overall market sentiment. The primary objective is to determine how key trading metrics, such as profitability and volume, align with or diverge from market sentiment classifications of "Fear" and "Greed."
+
+## Datasets
+
+The analysis uses two primary datasets, which have been cleaned and merged for this project.
+
+### 1. Historical Trader Data
+
+| Column Name      | Description                                      |
+| ---------------- | ------------------------------------------------ |
+| `Timestamp IST`  | The date and time of the trade.                  |
+| `Closed PnL`     | The profit or loss from the closed position.     |
+| `Size USD`       | The size of the trade in USD (a measure of volume). |
+| `Account`        | The unique ID of the trader.                     |
+| `Execution Price`| The price at which the trade was executed.       |
+
+### 2. Bitcoin Market Sentiment Dataset
+
+| Column Name      | Description                                      |
+| ---------------- | ------------------------------------------------ |
+| `date`           | The date corresponding to the sentiment score.   |
+| `classification` | The market sentiment (Fear, Greed, Neutral).     |
+| `value`          | The numerical Fear & Greed Index score.          |
+
+## Analysis Objective
+
+The main goal of this analysis is to:
+* Analyze the correlation between trading profitability (`Closed PnL`) and market sentiment.
+* Examine how trading volume (`Size USD`) changes during different sentiment periods.
+* Identify any hidden trends or signals that could be used to develop smarter trading strategies.
+
+## Instructions
+
+All analysis was performed in a Google Colab notebook. To replicate the results, simply run the code provided in the `notebook_1.ipynb` file. The required data files are located in the `csv_files/` directory. The generated plots will be saved to the `outputs/` directory.
